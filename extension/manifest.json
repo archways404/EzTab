@@ -1,0 +1,17 @@
+{
+	"manifest_version": 3,
+	"name": "EzTab",
+	"version": "0.0.1",
+	"action": { "default_title": "Select tabs", "default_popup": "popup.html" },
+	"permissions": ["tabs", "storage"],
+	"host_permissions": ["http://127.0.0.1/*", "http://localhost/*"],
+	"content_security_policy": {
+		"extension_pages": "script-src 'self'; object-src 'self'; connect-src 'self' http://127.0.0.1:* http://localhost:*"
+	},
+	"web_accessible_resources": [
+		{
+			"resources": ["icons/pin.svg"],
+			"matches": ["<all_urls>"]
+		}
+	]
+}

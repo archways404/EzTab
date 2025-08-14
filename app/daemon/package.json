@@ -1,0 +1,13 @@
+{
+	"name": "ez-daemon",
+	"private": true,
+	"type": "module",
+	"version": "0.0.1",
+	"main": "daemon.js",
+	"scripts": {
+		"start": "node daemon.js"
+	},
+	"dependencies": {
+		"ws": "^8.18.0"
+	}
+}
