@@ -1,0 +1,21 @@
+{
+	"manifest_version": 3,
+	"name": "EzTab",
+	"version": "0.0.1",
+	"permissions": ["tabs", "storage"],
+	"host_permissions": ["<all_urls>"],
+	"action": { "default_title": "Select tabs", "default_popup": "popup.html" },
+	"background": { "service_worker": "bg.js" },
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "eztab@example",
+			"strict_min_version": "121.0"
+		}
+	},
+	"web_accessible_resources": [
+		{
+			"resources": ["icons/pin.svg"],
+			"matches": ["<all_urls>"]
+		}
+	]
+}

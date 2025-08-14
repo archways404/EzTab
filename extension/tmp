@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "build:chrome": "cp manifest.mv3.json dist/manifest.json",
+    "build:ff-mv3": "cp manifest.mv3.json dist/manifest.json",
+    "build:ff-mv2": "cp manifest.mv2-firefox.json dist/manifest.json"
+  }
+}
